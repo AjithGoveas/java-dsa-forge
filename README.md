@@ -25,6 +25,12 @@ This repository serves as both a practice ground and a reference library, with c
 
 ---
 
+## 📝 Commit Convention
+Commits in this repo follow a simple style for clarity and consistency.  
+See [COMMIT_CONVENTION.md](/COMMIT_CONVENTION.md) for detailed guidelines.
+
+---
+
 ## ✅ Status
 Currently progressing through the roadmap step by step.  
 Check the **Progress Tracker** for updated completion status.
