@@ -40,9 +40,9 @@ Use the checkboxes to mark completion of each subtopic.
 ---
 
 ## 🧩 Arrays
-- [ ] Introduction
-- [ ] Memory management
-- [ ] Input and Output
+- [x] Introduction
+- [x] Memory management
+- [x] Input and Output
 - [ ] ArrayList Introduction
 - [ ] Searching
     - [ ] Linear Search
