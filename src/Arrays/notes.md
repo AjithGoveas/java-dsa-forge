@@ -99,16 +99,16 @@ datatype[][] varName = new datatype[rowSize][colSize];
 
 * The `.length` property on a 2D array returns the number of rows.
 
-## ArrayList
+## ArrayList 📖
 
-ArrayList is the dynamic array, where the size of the array is variable.
+ArrayList is a dynamic array where the size can grow or shrink as needed.
 
 **Syntax:**
 
 ```java
 import java.util.ArrayList;
 
-ArrayList<datatype> variable_name = new ArrayList<>(initialSize);
+ArrayList<datatype> variableName = new ArrayList<>(initialSize);
 ```
 
 **Example:**
@@ -117,33 +117,47 @@ ArrayList<datatype> variable_name = new ArrayList<>(initialSize);
 import java.util.ArrayList;
 
 // Primitive datatypes
-ArrayList<Integer> numList = new ArrayList<>(5);
+ArrayList<Integer> numList = new ArrayList<>(5);   // Wrapper class for int
 
 // Non-primitive datatypes
-ArrayList<String> namesList = new ArrayList<>(4);
+ArrayList<String> namesList = new ArrayList<>(4);  // Strings
+
 ```
 
-- For primitive datatypes, we use wrapper classes of the datatypes instead.
-- We can directly print the `ArrayList` and no need to use `.toString()` method.
-- We have many in-built methods and utilities available for `ArrayList`.
-- For `Scanner` input, we use `.add(scanner_input)`.
+**Key Points:**
 
-### Working of ArrayList
+- For primitive datatypes, use wrapper classes (`Integer`, `Double`, etc.). 
+- `ArrayList` can be directly printed without `.toString()`. 
+- Many in-built methods are available (`add()`, `remove()`, `size()`, etc.). 
+- For `Scanner` input, use `.add(scanner_input)`.
 
-- Size is actually fixed. !!!
-- But when the ArrayList fills by some amount, it will create a new ArrayList double the size (maybe).
-- After creating the new ArrayList, the elements will be copied from the old ArrayList to the new one.
-- The old ArrayList will be deleted after copying.
+**Working of ArrayList:**
 
-[Refer Code for ArrayList](ArrayListExample.java)
+- Internally, size is fixed. 
+- When the array fills, a new array (usually double the size) is created. 
+- Elements are copied from the old array to the new one. 
+- The old array is discarded after copying.
+
+[Refer Code for ArrayList](ArrayListExample.java) <br/>
 [Refer Code for MultiArrayList](MultiArrayList.java)
 
-## Swap in Java
+## Swap in Java 🔄
 
-In Java, we can't swap like C++ because of pointers and heap memory.
+In Java, we cannot swap variables directly like in C++ (due to pointers and heap memory).
+But we can swap elements inside an array.
 
-But, we can swap elements in Array.
-The implementation [code](SwapInArray.java) is here.
+[Refer Code](SwapInArray.java)
+
+## Reverse an Array 🔁
+
+**Approach: Two Pointers**
+
+- Use a `start` pointer and an `end` pointer.
+- Swap the elements at `start` and `end`.
+- Increment `start` and decrement `end`.
+- Stop when `start > end`.
+
+[Refer Code](ReverseArray.java)
 
 ## Common Mistakes and Tips ⚠️
 
