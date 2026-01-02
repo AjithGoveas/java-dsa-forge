@@ -1,7 +1,5 @@
 # Arrays 📚
 
----
-
 ## Why are Arrays Used? 🤔
 
 Suppose we want to store roll numbers of students.  
@@ -11,8 +9,6 @@ For a small number (like 2 or 3 students), we can simply use separate variables.
 
 **Definition (C++ perspective):**  
 Arrays are continuous blocks of memory that hold elements of a specific type.
-
----
 
 ## Syntax and Examples 🖊️
 
@@ -37,8 +33,6 @@ int[] nums = {1, 2, 3, 4, 5};
 👉 On the left-hand side (LHS), we declare the array.
 👉 On the right-hand side (RHS), we initialize it.
 
----
-
 ## Important Notes 📌
 
 * Declaration happens at compile time.
@@ -51,8 +45,6 @@ int[] nums = {1, 2, 3, 4, 5};
 
 * [Refer to Java specification docs] for deeper details.
 
----
-
 ## Key Features of Arrays 🌟
 * **Store Primitives and Objects:** Arrays can hold primitive types (`int`, `char`, `boolean`, etc.) as well as objects (`String`, `Integer`, etc.).
 
@@ -62,15 +54,11 @@ int[] nums = {1, 2, 3, 4, 5};
 
 * **Fixed Length:** Once created, the size of an array cannot be changed.
 
----
-
 ## Array Representation 🖼️
 
 ![Primitive Arrays](https://media.geeksforgeeks.org/wp-content/uploads/20250924125731518155/primitive_array_.webp)
 
 ![Non-primitive Arrays](https://media.geeksforgeeks.org/wp-content/uploads/20250924125824403726/object_array_.webp)
-
----
 
 ## Default Values in Arrays 🎯
 
@@ -81,16 +69,12 @@ When an array is initialized, its elements are automatically set to default valu
 * `boolean` → `false`
 * and so on…
 
----
-
 ## Array Input/Output (I/O) ⌨️
 * Use for loops for basic array input and output.
 
 * For convenience, Java provides utility methods in the java.util.Arrays package.
 
 [Refer code](InputOutput.java)
-
----
 
 ## Multidimensional Arrays 🔢
 Arrays can have more than one dimension.
@@ -115,7 +99,51 @@ datatype[][] varName = new datatype[rowSize][colSize];
 
 * The `.length` property on a 2D array returns the number of rows.
 
----
+## ArrayList
+
+ArrayList is the dynamic array, where the size of the array is variable.
+
+**Syntax:**
+
+```java
+import java.util.ArrayList;
+
+ArrayList<datatype> variable_name = new ArrayList<>(initialSize);
+```
+
+**Example:**
+
+```java
+import java.util.ArrayList;
+
+// Primitive datatypes
+ArrayList<Integer> numList = new ArrayList<>(5);
+
+// Non-primitive datatypes
+ArrayList<String> namesList = new ArrayList<>(4);
+```
+
+- For primitive datatypes, we use wrapper classes of the datatypes instead.
+- We can directly print the `ArrayList` and no need to use `.toString()` method.
+- We have many in-built methods and utilities available for `ArrayList`.
+- For `Scanner` input, we use `.add(scanner_input)`.
+
+### Working of ArrayList
+
+- Size is actually fixed. !!!
+- But when the ArrayList fills by some amount, it will create a new ArrayList double the size (maybe).
+- After creating the new ArrayList, the elements will be copied from the old ArrayList to the new one.
+- The old ArrayList will be deleted after copying.
+
+[Refer Code for ArrayList](ArrayListExample.java)
+[Refer Code for MultiArrayList](MultiArrayList.java)
+
+## Swap in Java
+
+In Java, we can't swap like C++ because of pointers and heap memory.
+
+But, we can swap elements in Array.
+The implementation [code](SwapInArray.java) is here.
 
 ## Common Mistakes and Tips ⚠️
 
@@ -133,7 +161,7 @@ datatype[][] varName = new datatype[rowSize][colSize];
 
 - **Immutable Size:** Once created, the size of an array cannot be changed. Use `ArrayList` if you need dynamic resizing.
 
----
+
 
 ## Quick Revision Cheatsheet 📝
 
@@ -151,4 +179,3 @@ datatype[][] varName = new datatype[rowSize][colSize];
 
 * **Heap vs Stack:** Array object in heap, reference in stack
 
----
