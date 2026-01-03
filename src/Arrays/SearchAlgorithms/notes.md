@@ -32,9 +32,35 @@ There are two primary search techniques:
 
 [Refer Code](Search2DArray.java)
 
-## Binary Search ⚡ (to be added later)
+## Binary Search ⚡
 
-(Placeholder for when you cover Binary Search in detail — iterative and recursive approaches, prerequisites like sorted arrays, and complexity analysis.)
+- Works on the **Divide and Conquer** principle. 
+- Requires the array to be **sorted** (ascending or descending).
+
+**Algorithm Steps:**
+
+1. Find the middle element using low and high pointers. 
+2. Compare the middle element with the target:
+   1. If equal → return index. 
+   2. If target < middle → search the **left half**. 
+   3. If target > middle → search the **right half**.
+3. Repeat until the target is found or the search space becomes empty.
+
+**Important Notes:**
+
+- Always calculate `mid` as: <br/> `mid = low + (high - low) / 2` <br/>
+This avoids integer overflow compared to `(low + high) / 2`.
+- Algorithm stops when `low > high`.
+- If the sort order is unknown, use **Order-Agnostic Binary Search**:
+  - First check whether the array is sorted ascending or descending.
+  - Then apply binary search accordingly.
+
+**Time Complexity:**
+
+- **Best Case: O(1)** → Element found at the first comparison.
+- **Worst Case: O(log n)** → Search space halves at each step.
+
+[Refer Code](BinarySearch.java)
 
 ## Quick Revision Cheatsheet 📝
 
