@@ -50,9 +50,9 @@ Use the checkboxes to mark completion of each subtopic.
     - [ ] Modified Binary Search
     - [ ] Binary Search on 2D Arrays
 - [ ] Sorting
-    - [ ] Insertion Sort
-    - [ ] Selection Sort
-    - [ ] Bubble Sort
+    - [x] Insertion Sort
+    - [x] Selection Sort
+    - [x] Bubble Sort
     - [ ] Cyclic Sort
     - [ ] Count Sort
     - [ ] Radix Sort

@@ -8,9 +8,9 @@ This roadmap is designed to take you from absolute basics to advanced problem so
 - [ ] Mathematics essentials (bitwise operators, primes, sieve, modulo properties)
 
 ## 🔧 Stage 2: Sorting Techniques
-- [ ] Bubble Sort
-- [ ] Selection Sort
-- [ ] Insertion Sort
+- [x] Bubble Sort
+- [x] Selection Sort
+- [x] Insertion Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Cyclic Sort
