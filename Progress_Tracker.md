@@ -43,7 +43,7 @@ Use the checkboxes to mark completion of each subtopic.
 - [x] Introduction
 - [x] Memory management
 - [x] Input and Output
-- [ ] ArrayList Introduction
+- [x] ArrayList Introduction
 - [ ] Searching
     - [ ] Linear Search
     - [ ] Binary Search
