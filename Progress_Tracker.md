@@ -49,13 +49,13 @@ Use the checkboxes to mark completion of each subtopic.
     - [ ] Binary Search
     - [ ] Modified Binary Search
     - [ ] Binary Search on 2D Arrays
-- [ ] Sorting
+- [x] Sorting
     - [x] Insertion Sort
     - [x] Selection Sort
     - [x] Bubble Sort
-    - [ ] Cyclic Sort
-    - [ ] Count Sort
-    - [ ] Radix Sort
+    - [x] Cyclic Sort
+    - [x] Count Sort
+    - [x] Radix Sort
 
 ---
 
@@ -95,9 +95,9 @@ Use the checkboxes to mark completion of each subtopic.
 - [ ] Why recursion?
 - [ ] Tree building of function calls
 - [ ] Tail recursion
-- [ ] Sorting
-    - [ ] Merge Sort
-    - [ ] Quick Sort
+- [x] Sorting
+    - [x] Merge Sort
+    - [x] Quick Sort
 - [ ] Backtracking
     - [ ] N-Queens
     - [ ] N-Knights

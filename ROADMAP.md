@@ -1,5 +1,5 @@
 # ✅ Data Structures & Algorithms Roadmap
-This roadmap is designed to take you from absolute basics to advanced problem solving in a structured way. Each stage builds on the previous one, ensuring clarity and confidence.
+This roadmap is designed to take you from absolute basics to advanced problem-solving in a structured way. Each stage builds on the previous one, ensuring clarity and confidence.
 
 ## 📘 Stage 1: Learn the Basics
 - [x] Programming fundamentals (variables, loops, conditionals, functions)
@@ -11,11 +11,11 @@ This roadmap is designed to take you from absolute basics to advanced problem so
 - [x] Bubble Sort
 - [x] Selection Sort
 - [x] Insertion Sort
-- [ ] Merge Sort
-- [ ] Quick Sort
-- [ ] Cyclic Sort
-- [ ] Counting Sort
-- [ ] Radix Sort
+- [x] Merge Sort
+- [x] Quick Sort
+- [x] Cyclic Sort
+- [x] Counting Sort
+- [x] Radix Sort
 
 ## 🧩 Stage 3: Arrays
 - [ ] Array manipulation and traversal
