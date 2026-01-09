@@ -199,3 +199,100 @@ They use recursion and divide‑and‑conquer strategies to achieve better perfo
 [Refer Code](RecursiveInsertionSort.java)
 
 ---
+
+## Some Extra Sorting Techniques
+
+### 🟢 Cyclic Sort
+
+**Idea:** Place each element directly at its correct index (`value → index = value - 1`) by swapping until all elements are in their right positions.<br/>
+**Mantra:** *Put every number where it belongs.*
+
+**Algorithm:**
+1. Start with the first element.
+2. Check if the element is at its correct position (`arr[i] == i + 1`).
+3. If not, swap it with the element at its target position (`arr[i] - 1`).
+4. If yes, move to the next index.
+5. Repeat until all elements are placed correctly.
+
+**Notes:**
+- Works only when elements are in the range `1…N` (where `N` is the size of the array).
+- Each number is placed at index `value - 1`.
+- Very efficient for problems involving **missing numbers, duplicates, or placing numbers in order**.
+- Not suitable for general sorting with arbitrary values or negatives.
+
+**Complexity:**
+- Time: **O(n)** (each element is swapped at most once).
+- Space: **O(1)** (in‑place sorting).
+- Stable: ❌ (relative order of equal elements is not preserved).
+
+[Refer Code](CyclicSort.java)
+
+---
+
+### 🟢 Counting Sort
+
+**Idea:** Sort elements by counting their frequency and reconstructing the array based on counts. <br/>
+**Mantra:** *Count frequencies, then place elements.*
+
+**Algorithm:**
+1. Find the largest element in the array (to size the frequency array).
+2. Initialize a frequency array of size `largest + 1`.
+3. Count occurrences of each element.
+4. Build a prefix sum (cumulative frequency) for stability.
+5. Place elements into an output array using their cumulative counts.
+6. Copy the output array back to the original array.
+
+**Notes:**
+- Non‑comparison based sorting algorithm.
+- Works best when the range of numbers (`k`) is not significantly larger than the number of elements (`n`).
+- Stable version is important when used as a subroutine in **Radix Sort**.
+- Handles duplicates naturally by frequency counting.
+- Not suitable for negative numbers unless offsetting is applied.
+
+**Complexity:**
+- Time: **O(n + k)** (where `n` = number of elements, `k` = range of input values).
+- Space: **O(n + k)** (output + frequency array).
+- Stable: Yes (when prefix sums and backward iteration are used).
+
+[Refer Code](CountSort.java)
+
+---
+
+### 🟢 Radix Sort
+
+**Idea:**  
+Sort numbers digit by digit, starting from the least significant digit (LSD) or most significant digit (MSD), using a **stable sorting algorithm** (commonly Counting Sort) at each step. <br/>
+**Mantra:** *Sort by digits, preserve order.*
+
+**Algorithm (LSD Radix Sort):**
+1. Find the maximum number to determine the number of digits.
+2. For each digit position (ones, tens, hundreds, …):
+    - Use a stable sort (Counting Sort) to sort elements based on that digit.
+    - Stability ensures earlier digit order is preserved.
+3. After processing all digit positions, the array is fully sorted.
+
+**Pseudocode (conceptual):**
+```
+radixSort(arr) {
+    max = getMax(arr);
+    for (int exp = 1; max / exp > 0; exp *= 10) {
+        countingSortByDigit(arr, exp); // stable sort by current digit
+    }
+}
+```
+
+**Notes:**
+
+- Radix Sort is **non‑comparison based**. 
+- Works best when numbers have a limited number of digits (e.g., integers, strings of fixed length). 
+- Relies on **stable sorting** (like Counting Sort) for correctness.
+- Can be implemented as LSD (the least significant digit first, most common) or MSD (most significant digit first).
+- Often used in scenarios like sorting phone numbers, IDs, or strings with fixed length.
+
+**Complexity:**
+
+- Time: **O(n · k)**, where `n` = number of elements, `k` = number of digits.
+- Space: **O(n + k)** (due to Counting Sort).
+- Stable: ✅ Yes (when stable sort is used).
+
+---
