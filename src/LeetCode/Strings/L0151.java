@@ -81,7 +81,7 @@ public class L0151 {
 
             while(i >= 0) {
                 // remove trailing/leading spaces
-                while (i > 0 && s.charAt(i) == ' ') {
+                while (i >= 0 && s.charAt(i) == ' ') {
                     i--;
                 }
 
@@ -112,7 +112,7 @@ public class L0151 {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        String s = "the sky is blue";
+        String s = "  hello world  ";
 
         System.out.println("Input: s = " + s);
         System.out.println("Output: " + solution.reverseWords(s));
