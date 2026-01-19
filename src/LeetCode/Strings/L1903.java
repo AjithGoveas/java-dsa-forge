@@ -1,8 +1,6 @@
 package LeetCode.Strings;
 
 
-import java.util.Arrays;
-
 /// # [L1903: Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string)
 /// ## Level - Easy
 /// You are given a string `num`, representing a large integer. Return _the **largest-valued odd** integer (as a string) that is a **non-empty substring** of `num`, or an empty string `""` if no odd integer exists_.
@@ -39,7 +37,7 @@ public class L1903 {
             // Part 1: Find last odd digit
             int i = 0;
             for (i = num.length() - 1; i >= 0; i--) {
-                if((num.charAt(i) - '0') % 2 == 1) {
+                if ((num.charAt(i) - '0') % 2 == 1) {
                     idx = i;
                     break;
                 }
@@ -48,18 +46,19 @@ public class L1903 {
             // Return if empty
             if (idx == -1) return "";
 
+            // Trailing/Leading zeroes can be skipped => 000035427
             i = 0;
-            while(i <= idx && num.charAt(i) == '0') i++;
+            while (i <= idx && num.charAt(i) == '0') i++;
 
             // return substring
-            return num.substring(i, idx+1);
+            return num.substring(i, idx + 1);
         }
     }
 
     public static void main(String[] args) {
         Solution sol = new Solution();
 
-        String num = "52";
+        String num = "35427";
 
         System.out.println("Input: num = " + num);
         System.out.println("Output: " + sol.largestOddNumber(num));
