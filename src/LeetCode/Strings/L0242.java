@@ -45,6 +45,8 @@ public class L0242 {
         public boolean approachTwo(String s, String t) {
             if (s.length() != t.length()) return false;
 
+            s.toLowerCase();
+            t.toLowerCase();
             HashMap<Character, Integer> map_s = new HashMap<>();
             HashMap<Character, Integer> map_t = new HashMap<>();
 
@@ -60,6 +62,9 @@ public class L0242 {
         // time complexity
         public boolean isAnagram(String s, String t) {
             if (s.length() != t.length()) return false;
+
+            s.toLowerCase();
+            t.toLowerCase();
 
             HashMap<Character, Integer> freq = new HashMap<>();
 
@@ -78,7 +83,7 @@ public class L0242 {
     public static void main(String[] args) {
         Solution sol = new Solution();
 
-        String s = "anagram";
+        String s = "Anagram";
         String t = "nagaram";
 
         System.out.println("Input: s = " + s + ", t = " + t);
