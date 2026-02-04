@@ -31,13 +31,14 @@ import java.util.Arrays;
 /// **Constraints:**
 ///
 /// - `1 <= nums.length <= 5000`
-/// - `-104 <= nums[i] <= 104`
+/// - `-10^4 <= nums[i] <= 10^4`
 /// - All values of `nums` are **unique**.
 /// - `nums` is an ascending array that is possibly rotated.
-/// - `-104 <= target <= 104`
+/// - `-10^4 <= target <= 10^4`
 
 public class L0033 {
     static class Solution {
+        // Linear Search
         public int approachOne(int[] nums, int target) {
             for (int i = 0; i < nums.length; i++) {
                 if (nums[i] == target) return i;
