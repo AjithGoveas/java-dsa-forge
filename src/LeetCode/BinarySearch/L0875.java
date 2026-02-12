@@ -40,7 +40,7 @@ public class L0875 {
             int largePile = Arrays.stream(piles).max().getAsInt();
 
             for (int speed = 1; speed <= largePile; speed++) {
-                int totalHrsRequired = calculateHours(piles, speed);
+                long totalHrsRequired = calculateHours(piles, speed);
 
                 if (totalHrsRequired <= h) return speed;
             }
@@ -48,27 +48,43 @@ public class L0875 {
             return largePile;
         }
 
-        private int calculateHours(int[] piles, int speed) {
-            int hours = 0;
+        private long calculateHours(int[] piles, int speed) {
+            long hours = 0;
             for (int pile : piles) {
-                hours += (pile + speed - 1) / speed; // safe integer ceiling division
+                hours += (pile + speed - 1L) / speed;
             }
             return hours;
         }
 
+        public int approachTwo(int[] piles, int h) {
+            int low = 1, high = Arrays.stream(piles).max().getAsInt();
+
+            while (low <= high) {
+                int mid = low + (high - low) / 2;
+                long hoursNeeded = calculateHours(piles, mid);
+
+                if (hoursNeeded <= h) {
+                    high = mid - 1;
+                } else {
+                    low = mid + 1;
+                }
+            }
+            return low;
+        }
 
         public int minEatingSpeed(int[] piles, int h) {
-            int maxPile = Arrays.stream(piles).max().getAsInt();
+            int low = 1, high = 0;
 
-            int low = 1, high = maxPile;
-            int ans = maxPile;
+            for (int pile : piles) {
+                high = Math.max(high, pile);
+            }
+
+            int ans = high;
 
             while (low <= high) {
                 int mid = low + (high - low) / 2;
 
-                int calculateHours = calculateHours(piles, mid);
-
-                if (calculateHours <= h) {
+                if (canEat(piles, h, mid)) {
                     ans = mid;
                     high = mid - 1;
                 } else {
@@ -77,6 +93,14 @@ public class L0875 {
             }
 
             return ans;
+        }
+
+        private boolean canEat(int[] piles, int h, int speed) {
+            long hours = 0;
+            for (int pile : piles) {
+                hours += (pile + speed - 1L) / speed;
+            }
+            return hours <= h;
         }
     }
 
