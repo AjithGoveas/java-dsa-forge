@@ -24,10 +24,10 @@ This roadmap is designed to take you from absolute basics to advanced problem-so
 - [ ] Matrix/2D array problems
 
 ## 🔎 Stage 4: Binary Search
-- [ ] Binary search on 1D arrays
-- [ ] Binary search on 2D arrays
-- [ ] Search space problems (binary search on answers)
-- [ ] Order‑agnostic binary search
+- [x] Binary search on 1D arrays
+- [x] Binary search on 2D arrays
+- [x] Search space problems (binary search on answers)
+- [x] Order‑agnostic binary search
 
 ## 🔤 Stage 5: Strings
 - [ ] String basics (immutability, comparison, operations)
