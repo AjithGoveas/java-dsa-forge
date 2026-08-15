@@ -2,6 +2,11 @@ package LeetCode.Arrays;
 
 import java.util.Arrays;
 
+/// # [Second Largest & Second Smallest]()
+/// **Level:** Easy | **Pattern:** Single-pass min/max trackers | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "second largest", "second smallest"
+/// **Traps:** Duplicate largest values; all identical elements (second largest undefined); array < 2 elements
+
 public class SecondLargest {
 
     static class Solution {

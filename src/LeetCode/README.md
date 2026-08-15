@@ -6,7 +6,7 @@ For a full index of problems, see [PROBLEMS.md](PROBLEMS.md)
 
 | Topic            | Problem Count |
 |------------------|---------------|
-| Arrays           | 12            |
+| Arrays           | 13            |
 | Binary Search    | 23            |
 | Hashmaps         | 0             |
 | Linked List      | 0             |

@@ -3,7 +3,10 @@ package LeetCode.Strings;
 import java.util.HashMap;
 
 /// # [L0013: Roman to Integer](https://leetcode.com/problems/roman-to-integer)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Scan with mapping / subtraction rule | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "roman to integer", "subtractive notation"
+/// **Traps:** IV/IX/XC/XL/CD/CM cases; single character; invalid ordering
+///
 /// Roman numerals are represented by seven different symbols: `I`, `V`, `X`, `L`, `C`, `D` and `M`.
 ///
 /// ```txt

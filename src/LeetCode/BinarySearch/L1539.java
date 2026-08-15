@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L1539: Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)
-/// ## Level - Easy
+/// **Level:** Medium | **Pattern:** Binary search using missing-count formula | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "kth missing positive number", "sorted array"
+/// **Traps:** Missing entirely before/after array; k beyond bounds; duplicate values absent (distinct)
 /// Given an array arr of positive integers sorted in a strictly increasing order, and an integer k.
 ///
 /// Return the kth positive integer that is missing from this array.

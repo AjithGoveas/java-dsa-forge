@@ -3,7 +3,9 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L0268: Missing Number](https://leetcode.com/problems/missing-number/)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Sum/XOR formula | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "missing number", "range 0..n"
+/// **Traps:** Integer overflow (use long or XOR); array of length 1
 /// Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return the only number in the range that is missing from the array.
 ///
 /// **Example 1:**

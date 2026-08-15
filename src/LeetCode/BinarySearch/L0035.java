@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0035: Search Insert Position](https://leetcode.com/problems/search-insert-position)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Binary search (lower_bound / insertion index) | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "search insert position", "maintain sorted order"
+/// **Traps:** Target larger than all elements; empty array
 /// Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 ///
 /// You must write an algorithm with `O(log n)` runtime complexity.

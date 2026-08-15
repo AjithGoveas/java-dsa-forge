@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L2095: Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Fast & Slow pointers (find and delete middle) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "delete middle node of linked list"
+/// **Traps:** Single node (return null); two nodes; even/odd length
 /// You are given the `head` of a linked list. **Delete** the **middle node**, and return the `head` _of the modified linked list_.
 ///
 /// The **middle node** of a linked list of size `n` is the `⌊n / 2⌋`th node from the **start** using **0-based indexing**, where `⌊x⌋` denotes the largest integer less than or equal to `x`.

@@ -3,6 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 ///  # [Find position of an element in a sorted array of infinite numbers](https://www.geeksforgeeks.org/dsa/find-position-element-sorted-array-infinite-numbers/)
+/// **Level:** Medium | **Pattern:** Exponential window expansion + binary search | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "find position in infinite sorted array", "no size/length known"
+/// **Traps:** Target in first window; very far target; box bounds doubling
 
 public class PositionInInfiniteArray {
     static class Solution {

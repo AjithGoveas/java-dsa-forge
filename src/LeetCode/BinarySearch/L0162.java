@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0162: Find Peak Element](https://leetcode.com/problems/find-peak-element/)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Binary search (peak-finding) | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "find peak element", "nums[i] > neighbors"
+/// **Traps:** Single element; monotonic increasing/decreasing; boundary handling
 ///
 /// A peak element is an element that is strictly greater than its neighbors.
 ///

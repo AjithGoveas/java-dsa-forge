@@ -5,7 +5,10 @@ import java.util.Map;
 import java.util.PriorityQueue;
 
 /// # [L0451: Sort Characters By Frequency](https://leetcode.com/problems/sort-characters-by-frequency)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Hashmap + heap or bucket sort by frequency | **TC / SC:** O(N) / O(K)
+/// **Trigger:** "sort characters by frequency"
+/// **Traps:** Ties in frequency; all same character; empty string
+///
 /// Given a string `s`, sort it in **decreasing order** based on the **frequency** of the characters. The **frequency** of a character is the number of times it appears in the string.
 ///
 /// Return _the sorted string_. If there are multiple answers, return _any of them_.

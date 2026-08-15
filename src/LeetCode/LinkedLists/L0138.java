@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0138: Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Copy with random pointer (hash map or interleaved nodes) | **TC / SC:** O(N) / O(N)
+/// **Trigger:** "copy linked list with random pointer", "deep copy"
+/// **Traps:** Null random pointers; empty list; single node with self random
 ///
 /// A linked list of length `n` is given such that each node contains an additional random pointer, which could point to any node in the list, or `null`.
 ///

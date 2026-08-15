@@ -4,7 +4,9 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L1752: Check If Array Is Sorted and Rotated](https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Count-decreases check | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "array is sorted and rotated", "non-decreasing"
+/// **Traps:** Single element (always true); all equal elements; one or zero break points
 ///
 /// Given an array `nums`, return `true` if the array was originally sorted in non-decreasing order, then rotated **some** number of positions (including zero). Otherwise, return `false`.
 ///

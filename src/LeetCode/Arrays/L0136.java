@@ -3,7 +3,9 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L0136: Single Number](https://leetcode.com/problems/single-number)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Bit Manipulation (XOR) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "every element appears twice except one", "single number"
+/// **Traps:** Single-element array; result XOR identity requires careful init to 0
 /// Given a **non-empty** array of integers `nums`, every element appears _twice_ except for one. Find that single one.
 ///
 /// You must implement a solution with a linear runtime complexity and use only constant extra space.

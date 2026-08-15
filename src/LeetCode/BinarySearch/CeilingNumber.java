@@ -3,8 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # Ceiling Number of the Given Digit
-///
-/// ## Level: Easy
+/// **Level:** Easy | **Pattern:** Binary Search (lower_bound / ceiling) | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "smallest element >= target"
+/// **Traps:** Target greater than all elements; empty array; duplicate values
 ///
 /// Given a sorted array `arr` of integers, return **ceiling number** of the `target`.
 ///

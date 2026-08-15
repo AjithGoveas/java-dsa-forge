@@ -4,7 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /// # [L0142: Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Fast & Slow pointers (find cycle entry) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "return node where cycle begins"
+/// **Traps:** No cycle (return null); cycle at head; mathematical distance relationship
 ///
 /// Given the `head` of a linked list, return the node where the cycle begins. If there is no cycle, return `null`.
 ///

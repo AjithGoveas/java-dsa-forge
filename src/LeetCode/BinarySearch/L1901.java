@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L1901: Find a Peak Element II](https://leetcode.com/problems/find-a-peak-element-ii)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Binary search on columns (column-max + neighbors) | **TC / SC:** O(N log M) / O(1)
+/// **Trigger:** "find peak element II", "2D matrix", "peak greater than 4 neighbors"
+/// **Traps:** Single row/column; peak at boundary
 /// A peak element in a 2D grid is an element that is strictly greater than all of its adjacent neighbors to the left, right, top, and bottom.
 ///
 /// Given a 0-indexed m x n matrix mat where no two adjacent cells are equal, find any peak element `mat[i][j]` and return the length 2 array `[i,j]`.

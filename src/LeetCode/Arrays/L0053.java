@@ -3,7 +3,10 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L0053: Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Running Sum / Kadane's Algorithm | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "contiguous subarray", "largest sum", handles mixed positive/negative numbers
+/// **Traps:** All-negative array (init max to `Integer.MIN_VALUE` or `nums[0]`, never `0`)
+///
 /// Given an integer array `nums`, find the **subarray** with the largest sum, and return _its sum_.
 ///
 /// **Example 1:**

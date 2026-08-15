@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L1283: Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Binary-search-on-answer (divisor) | **TC / SC:** O(N log max) / O(1)
+/// **Trigger:** "smallest divisor given a threshold"
+/// **Traps:** Divisor = 1; sum overflow; threshold smaller than possible minimum
 /// Given an array of integers nums and an integer threshold, we will choose a positive integer divisor, divide all the array by it, and sum the division's result. Find the smallest divisor such that the result mentioned above is less than or equal to threshold.
 ///
 /// Each result of the division is rounded to the nearest integer greater than or equal to that element. (For example: 7/3 = 3 and 10/2 = 5).

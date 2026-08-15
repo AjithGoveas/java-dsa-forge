@@ -3,7 +3,9 @@ package LeetCode.LinkedLists;
 import java.util.Stack;
 
 /// # [L0206: Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Iterative/recursive pointer reversal | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "reverse linked list"
+/// **Traps:** Single node; two nodes; null-termination of reversed tail
 /// Given the head of a singly linked list, reverse the list, and return the reversed list.
 ///
 /// **Example 1:**

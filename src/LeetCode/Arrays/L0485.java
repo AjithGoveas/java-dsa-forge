@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 
 /// # [L0485: Max Consecutive Ones]()
-/// Easy
+/// **Level:** Easy | **Pattern:** Single-pass counting / Sliding Window | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "max consecutive ones"
+/// **Traps:** Array of all ones; all zeros; single element
 /// Given a binary array `nums`, return the maximum number of consecutive `1`'s in the array.
 ///
 /// **Example 1:**

@@ -1,12 +1,13 @@
-package LeetCode;
+package LeetCode.Arrays;
 
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 /// # [L1295: Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/)
-///
-/// ## Level: Easy
+/// **Level:** Easy | **Pattern:** Digit-counting (log10/divisions) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "even number of digits"
+/// **Traps:** Zero has 1 digit (special-case); negative numbers (digit count ignores sign)
 ///
 /// Given an array `nums` of integers, return how many of them contain an **even number** of digits.
 ///

@@ -3,8 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # Floor Number of the Given Digit
-///
-/// ## Level: Easy
+/// **Level:** Easy | **Pattern:** Binary Search (upper_bound - 1 / floor) | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "largest element <= target"
+/// **Traps:** Target smaller than all elements; empty array
 ///
 /// Given a sorted array `arr` of integers, return **floor number** of the `target`.
 ///

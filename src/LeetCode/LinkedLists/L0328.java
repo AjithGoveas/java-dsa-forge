@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0328: Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Re-linking odd/even indexed nodes | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "odd even linked list", "group odd indices then even"
+/// **Traps:** Single node; two nodes; preserving order
 ///
 /// Given the `head` of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices, and return the _reordered list_.
 ///

@@ -1,7 +1,10 @@
 package LeetCode.Strings;
 
 /// # [L1021: Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Counter-based primitive removal | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "remove outermost parentheses for every primitive string"
+/// **Traps:** Matching depth; empty or no outer parens; nested depth
+///
 /// A valid parentheses string is either empty `""`, `"(" + A + ")"`, or `A + B`, where `A` and `B` are valid parentheses strings, and `+` represents string concatenation.
 ///
 /// - For example, `""`, `"()"`, `"(())()"`, and `"(()(()))"` are all valid parentheses strings.

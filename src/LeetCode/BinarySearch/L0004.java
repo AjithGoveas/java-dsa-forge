@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0004: Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)
-/// ## Level - Hard
+/// **Level:** Hard | **Pattern:** Binary search on k-th element / divide-and-conquer | **TC / SC:** O(log(min(m,n))) / O(1)
+/// **Trigger:** "median of two sorted arrays"
+/// **Traps:** One array empty; arrays of unequal length; odd vs even total length
 /// Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 ///
 /// The overall run time complexity should be O(log (m+n)).

@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L1482: Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Binary-search-on-answer (days feasibility) | **TC / SC:** O(N log max) / O(1)
+/// **Trigger:** "make m bouquets", "minimum days", "adjacent flowers"
+/// **Traps:** Not enough flowers (m*adjacent > n); all bloom at different days
 /// You are given an integer array `bloomDay`, an integer `m` and an integer `k`.
 ///
 /// You want to make `m` bouquets. To make a bouquet, you need to use `k` **adjacent flowers** from the garden.

@@ -2,7 +2,10 @@ package LeetCode.Strings;
 
 
 /// # [L1903: Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Scan from right to find last odd digit | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "largest odd number in string", "odd last digit"
+/// **Traps:** No odd digit (return ""); number entirely even; leading zeros in result not possible via substring
+///
 /// You are given a string `num`, representing a large integer. Return _the **largest-valued odd** integer (as a string) that is a **non-empty substring** of `num`, or an empty string `""` if no odd integer exists_.
 ///
 /// A **substring** is a contiguous sequence of characters within a string.

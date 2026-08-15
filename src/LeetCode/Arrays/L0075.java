@@ -3,7 +3,9 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L0075: Sort Colors](https://leetcode.com/problems/sort-colors)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Dutch National Flag (Three Pointers) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "sort array of 0s, 1s, 2s", "in-place"
+/// **Traps:** Single-color array; boundaries for low/high pointer updates
 /// Given an array `nums` with `n` objects colored red, white, or blue, sort them **in-place** so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
 ///
 /// We will use the integers `0`, `1`, and `2` to represent the color red, white, and blue, respectively.

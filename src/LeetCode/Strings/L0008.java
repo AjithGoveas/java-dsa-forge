@@ -1,7 +1,10 @@
 package LeetCode.Strings;
 
 /// # [L0008: String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Deterministic parsing with bounds checks (FSM-like) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "string to integer (atoi)", "parse int"
+/// **Traps:** Leading whitespace; leading +/-; overflow beyond int range; non-digit prefix (return 0); leading zeros
+///
 /// Implement the `myAtoi(string s)` function, which converts a string to a 32-bit signed integer.
 ///
 /// The algorithm for `myAtoi(string s)` is as follows:

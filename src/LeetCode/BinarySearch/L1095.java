@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L1095: Find in Mountain Array](https://leetcode.com/problems/find-in-mountain-array/)
-/// ## Level - Hard
+/// **Level:** Hard | **Pattern:** Find peak, then binary search both sides | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "find in mountain array", "interactive", "bitonic"
+/// **Traps:** Peak at boundaries; repeated binary searches for left/right
 /// ### (This problem is an interactive problem.)
 ///
 /// You may recall that an array arr is a mountain array if and only if:

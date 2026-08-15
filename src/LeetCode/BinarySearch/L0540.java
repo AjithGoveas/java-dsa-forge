@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /// # [L0540: Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Binary search using index-parity trick | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "single element in sorted array", "all others appear twice"
+/// **Traps:** Single element; target at first/last; pair boundaries before/after
 /// You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
 ///
 /// Return _the single element that appears only once_.

@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0237: Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Node deletion (copy next value trick) | **TC / SC:** O(1) / O(1)
+/// **Trigger:** "delete node given node reference, not head"
+/// **Traps:** Node is tail (can't copy next); single node; node == last
 /// There is a singly-linked list `head`, and we want to delete a node `node` in it.
 ///
 /// You are given the node to be deleted `node`. You will **not be given access** to the first node of `head`.

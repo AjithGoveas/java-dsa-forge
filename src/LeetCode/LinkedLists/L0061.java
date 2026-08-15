@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0061: Rotate List](https://leetcode.com/problems/rotate-list)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Rotate list (find new head, re-link tail) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "rotate list by k places"
+/// **Traps:** k mod length = 0; k > length; single node; empty list
 /// Given the `head` of a linked list, rotate the list to the right by `k` places.
 ///
 /// **Example 1:**

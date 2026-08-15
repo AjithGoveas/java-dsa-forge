@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0876: Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Fast & Slow pointers (find middle) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "middle of linked list"
+/// **Traps:** Even length (return second middle); single node; two nodes
 /// Given the `head` of a singly linked list, return the _middle node of the linked list_.
 ///
 /// If there are two middle nodes, return **the second middle** node.

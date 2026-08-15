@@ -6,7 +6,9 @@ import java.util.Map;
 
 
 /// # [L0169: Majority Element](https://leetcode.com/problems/majority-element)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Boyer-Moore Voting Algorithm | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "element that appears more than n/2 times"
+/// **Traps:** Majority always exists per constraints; tie scenarios; negative values (frequency-array approach fails)
 /// Given an array `nums` of size `n`, return the _majority element_.
 ///
 /// The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.

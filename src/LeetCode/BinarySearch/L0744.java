@@ -3,8 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L744: Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
-///
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Binary search with wrap-around (modulo) | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "smallest letter greater than target", "letters wrap around"
+/// **Traps:** Target >= last letter (wrap to index 0); all letters equal
 ///
 /// You are given an array of characters `letters` that is sorted in **non-decreasing order**, and a character `target`. There are **at least two different** characters in `letters`.
 ///

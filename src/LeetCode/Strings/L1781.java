@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /// # [L1781: Sum of Beauty of All Substrings](https://leetcode.com/problems/sum-of-beauty-of-all-substrings)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Brute-force substrings with frequency map | **TC / SC:** O(N^2) / O(N)
+/// **Trigger:** "sum of beauty of all substrings", "max freq - min freq"
+/// **Traps:** Single character substring (beauty 0); all same char; case-insensitivity
+///
 /// The **beauty** of a string is the difference in frequencies between the most frequent and least frequent characters.
 ///
 /// - For example, the beauty of `"abaacc"` is `3 - 1 = 2`.

@@ -2,7 +2,9 @@ package LeetCode.Arrays;
 
 
 /// # [L0121: Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Single-pass min tracking (Greedy) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "buy and sell stock", "max profit"
+/// **Traps:** Strictly decreasing prices (profit = 0); array of size 1
 /// You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
 ///
 /// You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.

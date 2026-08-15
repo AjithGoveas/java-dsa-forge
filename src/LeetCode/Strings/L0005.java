@@ -1,7 +1,10 @@
 package LeetCode.Strings;
 
 /// # [L0005: Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Expand-around-center (or Manacher) | **TC / SC:** O(N^2) / O(1)
+/// **Trigger:** "longest palindromic substring"
+/// **Traps:** Single character; two identical characters; even vs odd length palindromes; all same characters
+///
 /// Given a string `s`, return the longest _**palindromic substring**_ in `s`.
 ///
 /// **Example 1:**

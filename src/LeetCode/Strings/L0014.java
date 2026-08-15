@@ -3,7 +3,10 @@ package LeetCode.Strings;
 import java.util.Arrays;
 
 /// # [L0014: Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Sort + compare first/last, or iterative prefix shrink | **TC / SC:** O(N) / O(N)
+/// **Trigger:** "longest common prefix", "start with the same prefix"
+/// **Traps:** Empty array (return ""); single string; one string is prefix of another
+///
 /// Write a function to find the longest common prefix string amongst an array of strings.
 ///
 /// If there is no common prefix, return an empty string `""`.

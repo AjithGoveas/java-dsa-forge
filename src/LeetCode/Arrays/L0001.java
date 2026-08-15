@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 
 /// # [L0001: Two Sum](https://leetcode.com/problems/two-sum)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Hash Map (complement lookup) | **TC / SC:** O(N) / O(N)
+/// **Trigger:** "two numbers add up to target", "return indices"
+/// **Traps:** Duplicate values; must not use same element twice; complement = target - nums[i]
 /// Given an array of integers `nums` and an integer `target`, return _indices of the two numbers such that they add up to_ `target`.
 ///
 /// You may assume that each input would have **_exactly_ one solution**, and you may not use the _same_ element twice.

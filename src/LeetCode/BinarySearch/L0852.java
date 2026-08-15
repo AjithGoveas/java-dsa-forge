@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0852: Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
-/// ## Level - Medium
+/// **Level:** Easy | **Pattern:** Binary search to find peak index | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "peak index in mountain array", "strictly increasing then decreasing"
+/// **Traps:** Peak at ends; compare mid vs mid+1
 ///
 /// You are given an integer **mountain** array `arr` of length `n` where the values increase to a **peak element** and then decrease.
 ///

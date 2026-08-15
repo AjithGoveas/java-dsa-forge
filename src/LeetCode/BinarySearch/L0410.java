@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0410: Split Array Largest Sum](https://leetcode.com/problems/split-array-largest-sum)
-/// ## Level - Hard
+/// **Level:** Hard | **Pattern:** Binary-search-on-answer (feasibility + greedy) | **TC / SC:** O(N log(sum)) / O(1)
+/// **Trigger:** "split array", "minimize largest sum", "k partitions"
+/// **Traps:** k = 1; k = N; large values (overflow in sum)
 /// Given an integer array nums and an integer k, split nums into k non-empty subarrays such that the largest sum of any subarray is minimized.
 ///
 /// Return the minimized largest sum of the split.

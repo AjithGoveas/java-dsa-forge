@@ -3,7 +3,9 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L0283: Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Two Pointers (in-place shift) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "move zeroes to end"
+/// **Traps:** No zeros; all zeros; preserve relative order of non-zero
 /// Given an integer array `nums`, move all `0`'s to the end of it while maintaining the relative order of the non-zero elements.
 ///
 /// **Note** that you must do this in-place without making a copy of the array.

@@ -3,7 +3,9 @@ package LeetCode.Arrays;
 import java.util.Arrays;
 
 /// # [L0189: Rotate Array](https://leetcode.com/problems/rotate-array/)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Reverse-based rotation (in-place) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "rotate array"
+/// **Traps:** k > array length (modulo); k = 0; single element
 /// Given an integer array `nums`, rotate the array to the right by `k` steps, where `k` is non-negative.
 ///
 /// **Example 1:**

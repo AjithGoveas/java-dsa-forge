@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0240: Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)
-/// Medium
+/// **Level:** Medium | **Pattern:** Staircase search (matrix, O(m+n)) | **TC / SC:** O(m+n) / O(1)
+/// **Trigger:** "search in 2D matrix II", "rows and columns sorted"
+/// **Traps:** Target smaller than a[0][0] or larger than last element; empty matrix
 /// Write an efficient algorithm that searches for a value target in an m x n integer matrix `matrix`. This matrix has the following properties:
 ///
 /// Integers in each row are sorted in ascending from left to right.

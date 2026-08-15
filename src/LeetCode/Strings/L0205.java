@@ -3,7 +3,10 @@ package LeetCode.Strings;
 import java.util.HashMap;
 
 /// # [L0205: Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Character mapping with two arrays/maps | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "isomorphic strings", "one-to-one mapping"
+/// **Traps:** Different lengths; many-to-one mapping (a->b, c->b); 256 vs 128 char ranges
+///
 /// Given two strings `s` and `t`, _determine if they are isomorphic_.
 ///
 /// Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.

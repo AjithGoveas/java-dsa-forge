@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0019: Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Two Pointers (dummy node + fast/slow offset) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "remove nth node from end of list"
+/// **Traps:** n = length (removes head, use dummy); n = 1 (removes tail); single node
 /// Given the `head` of a linked list, remove the `n`th node from the end of the list and return its head.
 ///
 /// **Example 1:**

@@ -6,7 +6,10 @@ import java.util.Collections;
 import java.util.List;
 
 /// # [L0151: Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Trim + reverse / two-pointer word extraction | **TC / SC:** O(N) / O(N)
+/// **Trigger:** "reverse words in a string", "words separated by single space"
+/// **Traps:** Leading/trailing/multiple spaces; single word; empty or whitespace-only string
+///
 /// Given an input string `s`, reverse the order of the **words**.
 ///
 /// A **word** is defined as a sequence of non-space characters. The **words** in `s` will be separated by at least one space.

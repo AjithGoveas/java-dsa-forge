@@ -1,7 +1,9 @@
 package LeetCode.LinkedLists;
 
 /// # [L0234: Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Reverse second half + compare (two pointers/fast-slow) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "palindrome linked list"
+/// **Traps:** Odd vs even length; single node; all values equal
 /// Given the `head` of a singly linked list, return `true` if it is a _palindrome_ or `false` otherwise.
 ///
 /// **Example 1:**

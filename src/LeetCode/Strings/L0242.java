@@ -5,7 +5,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 /// # [L0242: Valid Anagram](https://leetcode.com/problems/valid-anagram)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Frequency count (hashmap or fixed-size array) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "valid anagram", "same characters same frequency"
+/// **Traps:** Different lengths; Unicode/uppercase-lowercase; empty strings (anagram)
+///
 /// Given two strings `s` and `t`, return `true` if `t` is an **anagram** of `s`, and `false` otherwise.
 ///
 /// **Example 1:**

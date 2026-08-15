@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0704: Binary Search](https://leetcode.com/problems/binary-search)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Standard binary search | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "search in sorted array", "find target index"
+/// **Traps:** Target not present (return -1); single element; target at ends; integer overflow in mid
 /// Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.
 ///
 /// You must write an algorithm with `O(log n)` runtime complexity.

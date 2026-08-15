@@ -3,7 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0074: Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Binary search on virtual 1D index | **TC / SC:** O(log(m*n)) / O(1)
+/// **Trigger:** "search in 2D matrix", "row sorted, first of row >= last of prev"
+/// **Traps:** Careful mid -> row/col mapping; empty matrix
 /// You are given an m x n integer matrix `matrix` with the following two properties:
 ///
 /// Each row is sorted in non-decreasing order.

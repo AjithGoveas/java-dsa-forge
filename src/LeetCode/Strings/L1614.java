@@ -1,7 +1,10 @@
 package LeetCode.Strings;
 
 /// # [L1614: Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Simple counter tracking depth | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "maximum nesting depth of parentheses", "balanced"
+/// **Traps:** Flat string (depth 0); max nesting in middle; char( vs char)
+///
 /// Given a **valid parentheses string** `s`, return the **nesting depth** of `s`. The nesting depth is the **maximum number** of nested parentheses.
 ///
 /// **Example 1:**

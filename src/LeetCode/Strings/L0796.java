@@ -1,7 +1,10 @@
 package LeetCode.Strings;
 
 /// # [L0796: Rotate String](https://leetcode.com/problems/rotate-string)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Check (s+s).contains(goal) (rotation trick) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "rotate string", "is goal a rotation of s"
+/// **Traps:** Equal length required; empty strings; s+s double-check before contains
+///
 /// Given two strings `s` and `goal`, return `true` _if and only if_ `s` _can become_ `goal` _after some number of **shifts** on_ `s`.
 ///
 /// A **shift** on `s` consists of moving the leftmost character of `s` to the rightmost position.

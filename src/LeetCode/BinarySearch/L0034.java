@@ -3,8 +3,9 @@ package LeetCode.BinarySearch;
 import java.util.Arrays;
 
 /// # [L0034: Find First and Last Position of Elements in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
-///
-/// ## Level - Medium
+/// **Level:** Medium | **Pattern:** Two binary searches (first/last) | **TC / SC:** O(log N) / O(1)
+/// **Trigger:** "first and last position of target", "sorted array"
+/// **Traps:** Target not present (return [-1,-1]); single element; all elements equal to target
 ///
 /// Given an array of integers `nums` sorted in non-decreasing order, find the starting and ending position of a given `target` value.
 ///

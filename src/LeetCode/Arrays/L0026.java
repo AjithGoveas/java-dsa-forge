@@ -5,7 +5,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /// # [L0026: Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
-/// ## Level - Easy
+/// **Level:** Easy | **Pattern:** Two Pointers (in-place) | **TC / SC:** O(N) / O(1)
+/// **Trigger:** "remove duplicates from sorted array", "in-place"
+/// **Traps:** Empty array; array with all same elements; length must be tracked by slow pointer
 /// Given an integer array `nums` sorted in **non-decreasing order**, remove the duplicates in-place such that each unique element appears only **once**. The **relative order** of the elements should be kept the **same**.
 ///
 /// Consider the number of unique elements in `nums` to be `k`. After removing duplicates, return the number of unique elements `k`.
