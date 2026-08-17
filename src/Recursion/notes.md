@@ -138,14 +138,14 @@ graph TD
 
 ```mermaid
 graph TD
-    A[fib(4)] --> B[fib(3)]
-    A --> C[fib(2)]
-    B --> D[fib(2)]
-    B --> E[fib(1)]
-    C --> F[fib(1)]
-    C --> G[fib(0)]
-    D --> H[fib(1)]
-    D --> I[fib(0)]
+    A["fib(4)"] --> B["fib(3)"]
+    A --> C["fib(2)"]
+    B --> D["fib(2)"]
+    B --> E["fib(1)"]
+    C --> F["fib(1)"]
+    C --> G["fib(0)"]
+    D --> H["fib(1)"]
+    D --> I["fib(0)"]
     style A fill:#f9f,stroke:#333
     style F fill:#bbf,stroke:#333
     style G fill:#bbf,stroke:#333
