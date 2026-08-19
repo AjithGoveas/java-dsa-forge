@@ -169,6 +169,24 @@
   * `[L0485]` Max Consecutive Ones — O(N) / O(1)
   * `[L0189]` Rotate Array — O(N) / O(1)
 
+## 17. Recursion — Binary Exponentiation (Modular)
+
+* **Triggers:** "calculate x raised to the power n", "pow(x, n)", "count good numbers", "large exponent, return modulo 10^9+7"
+* **Core Template:** Halve the exponent each step: `if n%2 == 0 → f(x*x, n/2)` else `x * f(x, n-1)`. For modular variants, fold `% MOD` into every multiplication and count independent positions (`L1922`: even indices have 5 choices, odd have 4).
+* **Traps:** Negative `n` (invert via `1/x`); use `long` for `n` up to 10^15; recursion depth is O(log n), not O(n).
+* **Linked Problems:**
+  * `[L0050]` Pow(x, n) — O(log N) / O(log N)
+  * `[L1922]` Count Good Numbers — O(log N) / O(log N)
+
+## 18. Recursion — Stack Manipulation (Insert-at-bottom / Insert-in-sorted-position)
+
+* **Triggers:** "sort a stack", "reverse a stack", "only stack operations, no extra data structure", "recursive stack manipulation"
+* **Core Template:** Pop the top, recursively process the rest, then re-insert the popped value in its correct spot. Sort = insert-in-sorted-position (descending: push while `top <= value`); Reverse = insert-at-bottom (`stack.add(top)` appends to the bottom).
+* **Traps:** Base cases (empty / single-element); the recursive call stack is the only auxiliary space (O(N)); `Stack.add` inserts at the bottom, not the top.
+* **Linked Problems:**
+  * `[SortStackInDescending]` Sort a Stack (Descending) — O(N²) / O(N)
+  * `[ReverseStack]` Reverse a Stack — O(N²) / O(N)
+
 ---
 
 ## How to add a newly solved problem

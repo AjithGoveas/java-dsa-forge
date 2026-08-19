@@ -90,14 +90,16 @@ Use the checkboxes to mark completion of each subtopic.
 ---
 
 ## 🔁 Recursion
-- [ ] Introduction
-- [ ] Flow of recursive programs (stack)
-- [ ] Why recursion?
-- [ ] Tree building of function calls
+- [x] Introduction
+- [x] Flow of recursive programs (stack)
+- [x] Why recursion?
+- [x] Tree building of function calls
 - [ ] Tail recursion
 - [x] Sorting
     - [x] Merge Sort
     - [x] Quick Sort
+    - [x] Sort a Stack (descending, recursion)
+    - [x] Reverse a Stack (recursion)
 - [ ] Backtracking
     - [ ] N-Queens
     - [ ] N-Knights

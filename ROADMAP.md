@@ -44,8 +44,8 @@ This roadmap is designed to take you from absolute basics to advanced problem-so
 - [ ] Linked list + recursion problems
 
 ## 🔁 Stage 7: Recursion
-- [ ] Flow of recursive programs
-- [ ] Sorting with recursion (Merge Sort, Quick Sort)
+- [x] Flow of recursive programs
+- [x] Sorting with recursion (Merge Sort, Quick Sort)
 - [ ] Backtracking problems (N‑Queens, Sudoku, Maze)
 - [ ] Subset/Combination generation
 - [ ] Recursion on strings and arrays
