@@ -15,6 +15,20 @@ import java.util.Stack;
 /// 1. **Pop the top** — `reverseStack` pops the top element and recursively reverses the remaining stack.
 /// 2. **Insert at the bottom** — after the sub-stack is reversed, the popped element is added at the
 ///    bottom (via `add`), so it ends up as the last/largest-index element.
+///
+/// **Execution trace (stack = [4, 1, 3, 2], top = 2):**
+/// ```
+/// reverseStack([4,1,3,2])      — pop 2
+/// └─ reverseStack([4,1,3])     — pop 3
+///    └─ reverseStack([4,1])    — pop 1
+///       └─ reverseStack([4])   — pop 4
+///          └─ reverseStack([]) → base case, return
+///          add(4) → [4]
+///       add(1) → [1, 4]
+///    add(3) → [3, 1, 4]
+/// add(2) → [2, 3, 1, 4]
+/// ```
+/// Popping the result gives: `4, 1, 3, 2` → reversed.
 public class ReverseStack {
     static class Solution {
         // Reverse the stack using only recursion

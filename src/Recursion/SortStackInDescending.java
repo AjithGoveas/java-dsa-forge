@@ -15,6 +15,21 @@ import java.util.Stack;
 /// 1. **Pop all elements** — `sortStack` pops the top element and recursively sorts the remaining stack.
 /// 2. **Insert in position** — `insert` places the popped element back at its correct spot so the
 ///    stack stays sorted descending.
+///
+/// **Execution trace (stack = [4, 1, 3, 2], top = 2):**
+/// ```
+/// sortStack([4,1,3,2])         — pop 2
+/// └─ sortStack([4,1,3])        — pop 3
+///    └─ sortStack([4,1])       — pop 1
+///       └─ sortStack([4])      — pop 4
+///          └─ sortStack([])    → base case, return
+///          insert([], 4) → push 4 → [4]
+///       insert([4], 1) → 1 < 4, pop 4, insert([], 1) → [1], push 4 → [4,1]
+///    insert([4,1], 3) → 3 < 4, pop 4, insert([1], 3) → 3 > 1, push 3 → [1,3], push 4 → [4,1,3]
+/// insert([4,1,3], 2) → 2 < 4, pop 4, insert([1,3], 2) → 2 < 3, pop 3, insert([1], 2)
+///   → 2 > 1, push 2 → [1,2], push 3 → [1,2,3], push 4 → [4,1,2,3]
+/// ```
+/// Popping the result gives: `3, 2, 1, 4` → descending order.
 public class SortStackInDescending {
     static class Solution {
         // Insert `value` into a sorted stack while keeping it sorted (descending)
