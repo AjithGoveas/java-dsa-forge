@@ -187,6 +187,25 @@
   * `[SortStackInDescending]` Sort a Stack (Descending) — O(N²) / O(N)
   * `[ReverseStack]` Reverse a Stack — O(N²) / O(N)
 
+## 19. Backtracking — Subsets / Combinations / Parentheses (Pick / Not-Pick)
+
+* **Triggers:** "subsets", "power set", "combination sum", "generate parentheses", "letter combinations", "pick or not pick", "no duplicate subsets"
+* **Core Template:** Build one candidate recursively; at each step branch on the legal choices:
+  * **Subsets** — at each index, include or skip the element, then move to `i+1` (skip if duplicate to avoid dup subsets).
+  * **Combinations** — consume a candidate (reuse at same index for `L0039`, else `i+1`), or skip to the next index.
+  * **Generate** — add a fixed legal character per level (parentheses `(`/`)`, phone digits, `0`/`1` with adjacency rule).
+  * Add the candidate to results only at the leaf (or every node for subsets).
+* **Traps:** Duplicate elements → sort + `i > start && nums[i] == nums[i-1]` to skip; "use once vs unlimited reuse" changes the recursive index; early break when `candidates[i] > target`; empty result for impossible targets.
+* **Linked Problems:**
+  * `[L0078]` Subsets — O(N · 2^N) / O(N)
+  * `[L0090]` Subsets II — O(N · 2^N) / O(N)
+  * `[L0039]` Combination Sum — O(N^(T/M)) / O(T/M)
+  * `[L0040]` Combination Sum II — O(2^N) / O(N)
+  * `[L0216]` Combination Sum III — O(C(9,K)) / O(K)
+  * `[L0022]` Generate Parentheses — O(4^N/√N) / O(N)
+  * `[L0017]` Letter Combinations of a Phone Number — O(4^N · N) / O(N)
+  * `[L3211]` Generate Binary Strings Without Adjacent Zeros — O(2^N) / O(N)
+
 ---
 
 ## How to add a newly solved problem
