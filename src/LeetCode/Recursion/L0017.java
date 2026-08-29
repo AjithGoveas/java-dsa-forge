@@ -41,7 +41,7 @@ public class L0017 {
         public List<String> letterCombinations(String digits) {
             List<String> res = new ArrayList<>();
 
-            if (digits.length() == 0) return res;
+            if (digits.isEmpty()) return res;
 
             backtrack(digits, res, 0, "");
 
