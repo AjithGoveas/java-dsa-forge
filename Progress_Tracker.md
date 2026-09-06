@@ -100,8 +100,8 @@ Use the checkboxes to mark completion of each subtopic.
     - [x] Quick Sort
     - [x] Sort a Stack (descending, recursion)
     - [x] Reverse a Stack (recursion)
-- [ ] Backtracking
-    - [ ] N-Queens
+- [x] Backtracking
+    - [x] N-Queens
     - [ ] N-Knights
     - [ ] Sudoku Solver
     - [ ] Maze problems

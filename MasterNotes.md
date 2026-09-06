@@ -205,6 +205,8 @@
   * `[L0022]` Generate Parentheses — O(4^N/√N) / O(N)
   * `[L0017]` Letter Combinations of a Phone Number — O(4^N · N) / O(N)
   * `[L3211]` Generate Binary Strings Without Adjacent Zeros — O(2^N) / O(N)
+  * `[L0051]` N-Queens — O(N!) / O(N²) — chessboard backtracking
+  * `[L0079]` Word Search — O(M·N·4^L) / O(L) — grid DFS with mark/restore
 
 ---
 

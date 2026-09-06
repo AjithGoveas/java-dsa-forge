@@ -9,7 +9,7 @@ For a full index of problems, see [PROBLEMS.md](PROBLEMS.md)
 | Arrays           | 14            |
 | Binary Search    | 23            |
 | Linked List      | 12            |
-| Recursion        | 10            |
+| Recursion        | 12            |
 | Strings          | 13            |
 
 Notes:
